@@ -2,7 +2,7 @@ import CoreBluetooth
 
 import GrowSpacePrivateSDK
 
-public class GrowSpaceSDK {
+public class GrowSpaceSDK_Dev {
     private var uwbScanner: SpaceUWB = SpaceUWB()
     
     public init() {}

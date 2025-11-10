@@ -18,10 +18,13 @@ let package = Package(
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "GrowSpaceSDK_Dev"),
+            name: "GrowSpaceSDK_Dev",
+            dependencies: ["GrowSpacePrivateSDK"]
+        ),
+        
         .binaryTarget(
             name: "GrowSpacePrivateSDK",
-            url: "https://github.com/freegrowenterprise/SpaceSDK-iOS/releases/download/v0.0.0.1/GrowSpacePrivateSDK.xcframework.zip",
+            url: "https://github.com/freegrowenterprise/SpaceSDK-iOS-dev/releases/download/dev_0.0.1/GrowSpacePrivateSDK.xcframework.zip",
             checksum: "62e834eed55731cb0334df8b883af5f09ded3b7d3d975989589baa05c4cfe875"
         ),
         .testTarget(
